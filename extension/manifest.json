@@ -1,0 +1,31 @@
+{
+  "name": "TL;DR",
+  "version": "1.0",
+  "manifest_version": 3,
+  "description": "Summarize selected text.",
+  "permissions": [
+    "contextMenus",
+    "notifications",
+    "activeTab",
+    "scripting",
+    "tabs"
+  ],
+  "icons": {
+    "16": "icon.png",
+    "32": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {},
+  "commands": {
+    "summarize" : {
+      "suggested_key": {
+        "default": "Shift+Alt+S"
+      },
+      "description": "Summarize selected text."
+    }
+  }
+}

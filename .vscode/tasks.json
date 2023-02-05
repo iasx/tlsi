@@ -1,0 +1,10 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Run",
+      "type": "shell",
+      "command": ["cd app; conda activate base; uvicorn app:app"]
+    }
+  ]
+}
